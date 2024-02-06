@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto+Condensed:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/hallway.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="container">
+            <div class="top-content">
+                <div class="top-left">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </div>
+                <div class="top-right">
+                    <li> <img src="images/phone.svg" alt=""><a href="#">8 (964) 89 99 119</a></li>
+                    <li> <img src="images/delivery.svg" alt=""><a href="#">Доставка</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <img src="images/LOGO.svg" alt="" class="navbar-logo">
+                <div class="navbar-input">
+                    <img src="images/search.svg" alt="">
+                    <input type="text" placeholder="Поиск" name="" id="">
+
+                </div>
+                <div class="navbar-bar">
+                    <img src="images/heart.svg" alt="">
+                    <img src="images/bag.svg" alt="">
+                    <img src="images/person.svg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="container">
+            <div class="menu-content">
+                <div class="menu-item">
+                    <img src="images/kitchen-icon.svg" alt="">
+                    <a href="kitchen.html">Кухни</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/bedroom-icon.svg" alt="">
+                    <a href="bedroom.html">Спальни</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/livingroom-icon.svg" alt="">
+                    <a href="livingroom.html">Гостинные</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/closet-icon.svg" alt="">
+                    <a class="on" href="hallway.html">Прихожие</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/office-icon.svg" alt="">
+                    <a href="office.html">Офисная мебель</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/childrensroom-icon.svg" alt="">
+                    <a href="children.html">Детская</a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="#" class="active">Акция</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/etc.svg" alt="" class="etc">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header">
+        <div class="container">
+            <div class="slide-container">
+                <div class="slide-no" id="slide-no"></div>
+                <div class="slide fade">
+
+                    <img src="https://rolen-mebel.ru/up/resizetmp/1680_640_4/27d166727599573d9fa491436e510f7b/banner.jpg"
+                        alt="image-1" style="width:100%;" />
+                    <!-- <div class="caption">Plane one</div> -->
+                </div>
+
+                <div class="slide fade">
+                    <img src="https://belarusmebel.kz/static/img/images/new/5.jpg" alt="image-1" style="width:100%;" />
+                    <!-- <div class="caption">Plane two</div> -->
+                </div>
+
+                <div class="slide fade">
+                    <img src="https://nsk.angstrem-mebel.ru/upload/landing/lp_slide888.jpg" alt="image-1"
+                        style="width:100%;" />
+                    <!-- <div class="caption">Plane three</div> -->
+                </div>
+
+                <div class="slide fade">
+                    <img src="https://davita-mebel.ru/wa-data/public/shop/skcatimage/105/banner_det-tif.jpg"
+                        alt="image-1" style="width:100%;" />
+                    <!-- <div class="caption">Plane four</div>/ -->
+                </div>
+
+                <div class="slide fade">
+                    <img src="https://renome-mebel.ru/assets/img/files/slider-banner/prichozhie.jpg" alt="image-1"
+                        style="width:100%;" />
+                    <!-- <div class="caption">Plane five</div> -->
+                </div>
+
+
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+            <br />
+            <div style="text-align:center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onClick="currentSlide(3)"></span>
+                <span class="dot" onClick="currentSlide(4)"></span>
+                <span class="dot" onClick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="mainrow">
+            <!-- <div class="card">
+                <div class="card-header">
+                    <img src="image 1.svg" alt="" class="img">
+                </div>
+    
+                <div class="card-body">
+                    <div class="card-sub title">Толикс-2 White Gloss</div>
+                    <div class="card-subtext name">Барные стулья</div>
+                    <div class="card-price price">4 690₽</div>
+                    <div class="card-razmer">Размеры</div>
+    
+                    <div class="card-row">
+                        <div class="card-col">
+                            <div class="col-sub">ШИРИНА</div>
+                            <div class="col-text width">43 СМ</div>
+                        </div>
+                        <div class="card-col">
+                            ×
+                        </div>
+                        <div class="card-col">
+                            <div class="col-sub">ГЛУБИНА</div>
+                            <div class="col-text height">43 СМ</div>
+                        </div>
+                        <div class="card-col">
+                            ×
+                        </div>
+                        <div class="card-col">
+                            <div class="col-sub">ВЫСОТА</div>
+                            <div class="col-text depth">77 СМ</div>
+                        </div>
+                    </div>
+                    <button class="card-btn saved">Добавить в корзину</button>
+                </div>
+            </div> -->
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-row">
+                        <div class="footer-col">
+                            <li><a class="navigation" href="#">НАВИГАЦИЯ</a></li>
+                            <li><a href="#">Кухни</a></li>
+                            <li><a href="#">Спальни</a></li>
+                            <li><a href="#">Гостинные</a></li>
+                        </div>
+                        <div class="footer-col">
+                            <li><a href="#">Прихожие</a></li>
+                            <li><a href="#">Офисная мебель</a></li>
+                            <li><a href="#">Детская</a></li>
+                        </div>
+                        <div class="footer-col">
+                            <li><a href="#">Шкафы</a></li>
+                            <li><a href="#">Матрасы</a></li>
+                            <li><a href="#">Мягкая мебель</a></li>
+                        </div>
+                    </div>
+
+                    <div class="footer-new">
+                        <li><a class="active-2" href="#">Акция</a></li>
+                        <li><a href="#">Новинки</a></li>
+                    </div>
+
+                </div>
+
+                <div class="footer-right">
+
+                    <img src="images/footer-loog.svg" alt="" class="footer-logo">
+
+                    <p class="footer-text">г. Анапа, Анапское шоссе,
+                        30 Ж/К Черное море
+
+                    </p>
+
+                    <div class="footer-links">
+                        <div class="footer-link">
+                            <img src="images/call.svg" alt="">
+                            <li><a href="tel:8 (964) 89 99 119">8 (964) 89 99 119</a></li>
+                        </div>
+
+                        <div class=" footer-link">
+                            <img src="images/insta.svg" alt="">
+                            <li><a href="#">INSTAGRAM</a></li>
+                        </div>
+
+                        <div class="footer-link">
+                            <img src="images/mail.svg" alt="">
+                            <li><a href="#">mebel_loft_anapa@mail.ru</a></li>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./js/hallway.js"></script>
+</body>
+
+</html>
